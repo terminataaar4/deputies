@@ -1,0 +1,5 @@
+deputies_api.deputies_all:
+    pattern:  /deputies.{_format}
+    defaults: { _controller: DeputiesApiBundle:Deputy:all, _format: ~ }
+    requirements:
+        _method: GET

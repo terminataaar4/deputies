@@ -1,0 +1,9 @@
+Deputies\CoreDomain\Deputy\Deputy:
+    exclusion_policy: ALL
+    properties:
+        id:
+            expose: true
+            inline: true
+        fullname:
+            expose: true
+            serialized_name: fullname 

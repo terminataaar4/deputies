@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+	<parameters>
+		<parameter key="deputy_repository.in_memory.class">Deputies\CoreDomainBundle\Repository\InMemoryDeputyRepository</parameter>
+	</parameters>
+
+	<services>
+		<!-- Exposed Services -->
+		<service id="deputy_repository" alias="deputy_repository.in_memory"></service>
+
+		<!-- Concrete Implementations -->
+		<service id="deputy_repository.in_memory" public="false" class="%deputy_repository.in_memory.class%"></service>
+	</services>
+</container>
