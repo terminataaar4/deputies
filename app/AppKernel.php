@@ -21,6 +21,7 @@ class AppKernel extends Kernel
             new JMS\SerializerBundle\JMSSerializerBundle(),
 
             new Deputies\CoreDomainBundle\DeputiesCoreDomainBundle(),
+            new Deputies\MainBundle\DeputiesMainBundle(),
             new Deputies\ApiBundle\DeputiesApiBundle(),
         );
 
