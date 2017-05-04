@@ -47,5 +47,9 @@
 # Backup entities generated with doctrine:generate:entities command
 */Entity/*~
 
+# PDF
+/src/Deputies/CoreDomainBundle/Resources/pdf/*
+!src/Deputies/CoreDomainBundle/Resources/pdf/.gitkeep
+
 # IDE
 *.swp

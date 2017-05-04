@@ -14,12 +14,15 @@ class RollCallVoting
 
     private $phase;
 
-    public function __construct(RollCallVotingId $id, Session $session, $number, $phase)
+    private $subject;
+
+    public function __construct(RollCallVotingId $id, Session $session, $number, $phase, $subject = "")
     {
         $this->id = $id;
         $this->session = $session;
         $this->number = $number;
         $this->phase = $phase;
+        $this->subject = $subject;
     }
 
     public function getId()
@@ -40,5 +43,10 @@ class RollCallVoting
     public function getPhase()
     {
         return $this->phase;
+    }
+
+    public function getSubject()
+    {
+        return $this->subject;
     }
 }
