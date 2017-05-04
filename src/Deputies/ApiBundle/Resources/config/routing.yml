@@ -3,3 +3,15 @@ deputies_api.deputies_all:
     defaults: { _controller: DeputiesApiBundle:Deputy:all, _format: ~ }
     requirements:
         _method: GET
+
+deputies_api.deputy_votes_all:
+    pattern:  /deputy_votes.{_format}
+    defaults: { _controller: DeputiesApiBundle:DeputyVote:all, _format: ~ }
+    requirements:
+        _method: GET
+
+deputies_api.roll_call_voting_results_all:
+    pattern: /roll_call_voting_results.{_format}
+    defaults: { _controller: DeputiesApiBundle:RollCallVoting:all, _format: ~ }
+    requirements:
+        _method: GET

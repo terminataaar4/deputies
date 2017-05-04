@@ -5,13 +5,18 @@
 
 	<parameters>
 		<parameter key="deputy_repository.in_memory.class">Deputies\CoreDomainBundle\Repository\InMemoryDeputyRepository</parameter>
+		<parameter key="deputy_vote_repository.in_memory.class">Deputies\CoreDomainBundle\Repository\InMemoryDeputyVoteRepository</parameter>
+		<parameter key="roll_call_voting_repository.in_memory.class">Deputies\CoreDomainBundle\Repository\InMemoryRollCallVotingRepository</parameter>
 	</parameters>
 
 	<services>
-		<!-- Exposed Services -->
 		<service id="deputy_repository" alias="deputy_repository.in_memory"></service>
-
-		<!-- Concrete Implementations -->
 		<service id="deputy_repository.in_memory" public="false" class="%deputy_repository.in_memory.class%"></service>
+
+		<service id="deputy_vote_repository" alias="deputy_vote_repository.in_memory"></service>
+		<service id="deputy_vote_repository.in_memory" public="false" class="%deputy_vote_repository.in_memory.class%"></service>
+
+		<service id="roll_call_voting_repository" alias="roll_call_voting_repository.in_memory"></service>
+		<service id="roll_call_voting_repository.in_memory" public="false" class="%roll_call_voting_repository.in_memory.class%"></service>
 	</services>
 </container>

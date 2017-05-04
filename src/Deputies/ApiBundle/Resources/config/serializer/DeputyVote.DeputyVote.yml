@@ -1,0 +1,15 @@
+Deputies\CoreDomain\DeputyVote\DeputyVote:
+    exclusion_policy: ALL
+    properties:
+        id:
+            expose: true
+            inline: true
+        rollCallVoting:
+            expose: true
+            serialized_name: roll_call_voting 
+        deputy:
+            expose: true
+            serialized_name: deputy
+        result:
+            expose: true
+            serialized_name: result

@@ -1,0 +1,15 @@
+Deputies\CoreDomain\RollCallVoting\RollCallVoting:
+    exclusion_policy: ALL
+    properties:
+        id:
+            expose: true
+            inline: true
+        session:
+            expose: true
+            serialized_name: session 
+        number:
+            expose: true
+            serialized_name: number 
+        phase:
+            expose: true
+            serialized_name: phase

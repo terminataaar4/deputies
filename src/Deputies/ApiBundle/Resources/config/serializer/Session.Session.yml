@@ -1,0 +1,15 @@
+Deputies\CoreDomain\Session\Session:
+    exclusion_policy: ALL
+    properties:
+        council:
+            expose: true
+            serialized_name: council 
+        date:
+            expose: true
+            serialized_name: date 
+        number:
+            expose: true
+            serialized_name: number 
+        name:
+            expose: true
+            serialized_name: name 
